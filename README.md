@@ -54,7 +54,9 @@ Possibly Dioxus is not the project to do that, but I think it's a goal worth str
 
 ##### matthunz — 10/18/23, 2:09 PM
 
-Totally agree! I think dioxus is currently the best rust UI state management tool out there so it should be a great fit for native. @marc 's Freya looks great and I wonder if that should become the official native platform. Blitz is a cool idea but I can see why it's getting depreciated: it'll be years before we could make a new web browser. That's why I'd love to see a direction to native components that we can incrementally grow over time
+*Totally agree! I think dioxus is currently the best rust UI state management tool out there so it should be a great fit for native.*
+
+@marc 's Freya looks great and I wonder if that should become the official native platform. Blitz is a cool idea but I can see why it's getting depreciated: it'll be years before we could make a new web browser. That's why I'd love to see a direction to native components that we can incrementally grow over time
 Another idea I had was using xilem's widget tree as a backend but that's also taking a long time
 Something else I've noticed is dioxus-desktop might be fairly limited. Animations and such over RPC will probably be much slower than with native
 
