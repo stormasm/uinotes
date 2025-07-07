@@ -160,6 +160,10 @@ The linebender org (who produce vello) have their own alternative "parley" for l
 
 ---
 
+- [4/4/24 Cargo bloat output](https://discord.com/channels/899851952891002890/954257659597553664/1225353711954427975)
+
+---
+
 ### What is Canvas
 
 What is Canvas (in web development)?
@@ -190,6 +194,7 @@ in: native before: 2023-03-13
 
 ### References
 
+- [Nerdy internals of an apple text editor](https://paper.pro/internals)
 - [Parley: Rich Text Layout Library](https://github.com/linebender/parley)
 - [css layout explained](https://dev.to/adrianbdesigns/css-houdini-s-layout-api-explained-33pa)
 - [Marc's Freya](https://github.com/marc2332/freya)
