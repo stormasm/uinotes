@@ -73,7 +73,43 @@ Lots of information on November 10, 2023
 
 As I said in the Future of Blitz issue on GH, I would be a little scared if you went to something non-html as I think that is one of the  key differences with freya. But anyway, It's up to you.
 
+I can think of:
+
+- Xilem is building their own with vello
+- Floem is using vger
+- Vizia is using femtovg
+- Iced has a tiny-skia renderer, but also a wgpu one.
+- Freya is using actual skia
+
+I think it would be cool to make something where a single end-user API can be "lowered" to both the native renderer and an actual web browser
+
+Kinda React Native style but with better web support
+
+I guess not really react-native style on the native side because it wouldn't be platform-specific renderers. But the idea that a single UI definition can be lowered to multiple backends is react-native-ish
+
+React-native does this well. It allows you to provide modules backed by native Android/iOS code that can be used by cross-platform apps.
+
+Some built-in RN components also have properties than only work on some platforms (and you can detect which platform you're on at the JS level and do slightly different things if you want to)
+
+Yes for example, a Box component that when targeting freya turns into a rect and when targeting web turns into a div
+
+Yes, exactly. Something like Box all gets easier if you just support web-style layout though (or at least a decent common subset). Because you don't really want to be writing your UI layouts twice.
+
+The trait abstracts over common capabilities that UI elements need to be able to do like:
+
+- Layout (compute size and position)
+- Paint (draw to screen)
+- Accessibility (expose an accessibility tree to the os)
+- Event handling (respond to input and pass messages up and down the tree)
+
+---
+
 - [11/16/23](https://discord.com/channels/899851952891002890/954257659597553664/1174711715833839647)
+
+---
+
+- [Stylo Dioxus In the Beginning](https://github.com/jkelleyrtp/stylo-dioxus)
+- [1/16/24](https://discord.com/channels/899851952891002890/954257659597553664/1196853533404840016)
 
 ---
 
