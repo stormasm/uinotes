@@ -71,12 +71,19 @@ Lots of information on November 10, 2023
 
 ---
 
+As I said in the Future of Blitz issue on GH, I would be a little scared if you went to something non-html as I think that is one of the  key differences with freya. But anyway, It's up to you.
+
+- [11/16/23](https://discord.com/channels/899851952891002890/954257659597553664/1174711715833839647)
+
+---
+
 ### Discord Search Example
 
 in: native before: 2023-03-13
 
 ### References
 
+- [css layout explained](https://dev.to/adrianbdesigns/css-houdini-s-layout-api-explained-33pa)
 - [Marc's Freya](https://github.com/marc2332/freya)
 - [10/4/23 The Future of Blitz](https://github.com/DioxusLabs/dioxus/discussions/1519)
 - [Dioxus Labs Projects](https://github.com/orgs/DioxusLabs/projects?query=is%3Aopen)
