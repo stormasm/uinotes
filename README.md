@@ -24,6 +24,14 @@ How difficult would it be to associate/store extra non-style attributes with a n
 
 ---
 
+*There is a very nice picture of the rendered frames in time*
+
+It seems like batching would be something that needs to integrate with Vello or be built into Vello, not Blitz.  Invalidation would cut out almost all of the work in that scene. When you hover over a button in that scene we only need to redraw that one box, but we redraw all 10k boxes instead. Native core outputs information about what parts of the computed styles have changed, we just need to take that output and only rerender the elements that changed
+
+- [4/20/23](https://discord.com/channels/899851952891002890/954257659597553664/1098675935974273034)
+
+---
+
 ### Discord Search Example
 
 in: native before: 2023-03-13
@@ -31,3 +39,4 @@ in: native before: 2023-03-13
 ### References
 
 - [Nical - GUIs on the GPU](https://nical.github.io/drafts/gui-gpu-notes.html)
+- [gpu powered markdown viewer](https://github.com/Inlyne-Project/inlyne)
