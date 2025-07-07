@@ -113,6 +113,53 @@ The trait abstracts over common capabilities that UI elements need to be able to
 
 ---
 
+blitz-dom is a integration between taffy + servo and then blitz (the crate in that repo) is the part where we pass off blitz-dom to vello.
+
+blitz-dom basically needs to combine taffy, cosmic-text, accessibilitykit, selection, hit-testing, etc
+
+Druid/xilem does it through glazier, so yes
+
+I think the best libraries in the ecosystem right now are accessibilitykit, glazier's shell, cosmic-text, and taffy
+
+That should give you layout, text, accessibility, and interaction
+
+I think most libraries will differ when it comes to state management and widgets
+
+For dioxus we're just taking the "dumb" approach of "let's just support html + css"
+
+Blitz-dom is structured like a slab of nodes that implements the taffy layout trait and stylo style trait. It has some groundwork for loading and caching images and does font/text resolution
+
+So you can cfg-out the stylo resolution stuff if you plug in your own style resolution engine
+Everything on top like accessibility/hit testing/etc would be universal to that dom implementation
+Old/current blitz uses ECS instead of a slab (making it more extendable) and works with native-core to provide a style/layout resolution engine
+
+Long term we want blitz-dom to work in TUI as well - and I imagine most folks building UI libraries from scratch would be intersted in just picking up a highly flexible dom implementation that has all the hard stuff solved (text, hit testing, widgets, layout) and just extend it with their own widgets
+
+- [1/20/24](https://discord.com/channels/899851952891002890/954257659597553664/1198419306724212816)
+
+---
+
+Stylo-Dioxus is already kinda decent compared to upstream Servo for the google.com homepage. This test is perhaps a little unfair because the page it makes use of flexbox column's which Servo doesn't support (but which would probably be quite easy to add), but still. If Stylo-Dioxus had image rendering support and inline block I reckon this would look pretty good. The one thing I'm a bit confused by is why the height: 100% style of the <body> (and it's immediate child) aren't taking effect in stylo-dioxus (at least I think that's the issue). That seems like something that ought to work already.
+
+
+- [2/1/2024](https://discord.com/channels/899851952891002890/954257659597553664/1202745900871450654)
+
+---
+
+- [2/15/2024 Unofficial Blitz / Stylo-Dioxus todo list](https://discord.com/channels/899851952891002890/954257659597553664/1207821660376399912)
+
+---
+
+Font fallback is out of scope for Vello: it just does glyph rendering. Currently it renders vector glyph paths on the GPU every frame, but there are plans for a glyph cache.
+
+Stylo-dioxus currently uses cosmic-text for text layout/rendering and I believe it also covers font fallback.
+
+The linebender org (who produce vello) have their own alternative "parley" for layout which currently uses "fount" for font fallback but may soon be using "fontique".
+
+- [3/7/2024](https://discord.com/channels/899851952891002890/954257659597553664/1215208243111141377)
+
+---
+
 ### What is Canvas
 
 What is Canvas (in web development)?
@@ -143,6 +190,7 @@ in: native before: 2023-03-13
 
 ### References
 
+- [Parley: Rich Text Layout Library](https://github.com/linebender/parley)
 - [css layout explained](https://dev.to/adrianbdesigns/css-houdini-s-layout-api-explained-33pa)
 - [Marc's Freya](https://github.com/marc2332/freya)
 - [10/4/23 The Future of Blitz](https://github.com/DioxusLabs/dioxus/discussions/1519)
