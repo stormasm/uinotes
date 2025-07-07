@@ -24,6 +24,10 @@ How difficult would it be to associate/store extra non-style attributes with a n
 
 ---
 
-### Ref
+### Discord Search Example
 
 in: native before: 2023-03-13
+
+### References
+
+- [Nical - GUIs on the GPU](https://nical.github.io/drafts/gui-gpu-notes.html)
