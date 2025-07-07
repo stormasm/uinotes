@@ -38,12 +38,38 @@ Im wondering what drives the decision to use wgpu for native (and have to implem
 
 ---
 
+Office applications are another example of something I wouldn't really want to build on top of the web platform. Neither a word processor (because I want to do custom text layout and rendering), nor a spreadsheet (because I want do infinite cells and virtualised rendering and the web is crap at this).
+I think basically anything that is a "serious" desktop app:
+
+- Office Suite
+- CAD Software
+- Figma
+- Adobe Suite
+- etc.
+
+You might say that those apps are going web. But the web versions don't tend to be good. And I think a lot of the reason they're going web is because it's miles ahead of anything else for cross-platform development.
+
+If that could be changed then we might see a revival of the native app
+Possibly Dioxus is not the project to do that, but I think it's a goal worth striving for
+
+##### matthunz — 10/18/23, 2:09 PM
+
+Totally agree! I think dioxus is currently the best rust UI state management tool out there so it should be a great fit for native. @marc 's Freya looks great and I wonder if that should become the official native platform. Blitz is a cool idea but I can see why it's getting depreciated: it'll be years before we could make a new web browser. That's why I'd love to see a direction to native components that we can incrementally grow over time
+Another idea I had was using xilem's widget tree as a backend but that's also taking a long time
+Something else I've noticed is dioxus-desktop might be fairly limited. Animations and such over RPC will probably be much slower than with native
+
+
+- [10/18/23](https://discord.com/channels/899851952891002890/954257659597553664/1164306527314772079)
+
+---
+
 ### Discord Search Example
 
 in: native before: 2023-03-13
 
 ### References
 
+- [10/4/23 The Future of Blitz](https://github.com/DioxusLabs/dioxus/discussions/1519)
 - [Dioxus Labs Projects](https://github.com/orgs/DioxusLabs/projects?query=is%3Aopen)
 - [Nical - GUIs on the GPU](https://nical.github.io/drafts/gui-gpu-notes.html)
 - [gpu powered markdown viewer](https://github.com/Inlyne-Project/inlyne)
