@@ -187,6 +187,18 @@ Whether text nodes belong to a stylesheet
 
 ---
 
+You'll get the basics working easily enough,
+
+*but if we want the blitz experience to be "take web code and change the backend and it just works"*
+
+then it's unlikely that we can replicate that in Masonry. Partly because the architecture (encapsulated widgets) isn't really suitable, but ultimately because the Masonry project wants to be native-first and is unlikely to want to commit to the compromises necessary for full web support.
+
+This project does seem interesting in it's own right, but it seems more similar to Freya than Blitz in spirit.
+
+ - [7/10/24](https://discord.com/channels/899851952891002890/954257659597553664/1260721727818694777)
+
+---
+
 ### What is Canvas
 
 What is Canvas (in web development)?
