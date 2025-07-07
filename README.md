@@ -164,6 +164,29 @@ The linebender org (who produce vello) have their own alternative "parley" for l
 
 ---
 
+I have a semi-working direct dioxus integration (using WriteMutations) up https://github.com/jkelleyrtp/stylo-dioxus/pull/7. This creates the initial tree. But it doesn't handle re-renders currently (and does something weird on resize).
+
+It also doesn't handle <style> elements yet. Which seem like they're going to be a bit of a pain to keep track of because:
+
+When they're initially created they don't have any content yet (because that lives in a child text node)
+They can exist in the DOM as part of a template (but they should only take effect if they're part of the main tree)
+
+They can be removed or moved out of the main tree
+
+They can be updated, which would likely actually be their child node(s) being update
+
+Order matters, so we need to sure that the stylesheets are maintained in the correct order
+
+Which means I think we might need to keep track of:
+
+Which Document each element currently belongs to
+
+Whether text nodes belong to a stylesheet
+
+- [4/14/24](https://discord.com/channels/899851952891002890/954257659597553664/1229273589799194645)
+
+---
+
 ### What is Canvas
 
 What is Canvas (in web development)?
