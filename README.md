@@ -32,11 +32,18 @@ It seems like batching would be something that needs to integrate with Vello or 
 
 ---
 
+Im wondering what drives the decision to use wgpu for native (and have to implement UI from scratch) for “native” instead of creating/use bindings for swift and android. Both shit ton of work of course but just wondering
+
+- [9/1/23](https://discord.com/channels/899851952891002890/954257659597553664/1147236487180599346)
+
+---
+
 ### Discord Search Example
 
 in: native before: 2023-03-13
 
 ### References
 
+- [Dioxus Labs Projects](https://github.com/orgs/DioxusLabs/projects?query=is%3Aopen)
 - [Nical - GUIs on the GPU](https://nical.github.io/drafts/gui-gpu-notes.html)
 - [gpu powered markdown viewer](https://github.com/Inlyne-Project/inlyne)
