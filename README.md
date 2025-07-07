@@ -62,6 +62,7 @@ Something else I've noticed is dioxus-desktop might be fairly limited. Animation
 
 
 - [10/18/23](https://discord.com/channels/899851952891002890/954257659597553664/1164306527314772079)
+- [11/11/23](https://discord.com/channels/899851952891002890/954257659597553664/1172872457418440704)
 
 ---
 
@@ -71,6 +72,7 @@ in: native before: 2023-03-13
 
 ### References
 
+- [Marc's Freya](https://github.com/marc2332/freya)
 - [10/4/23 The Future of Blitz](https://github.com/DioxusLabs/dioxus/discussions/1519)
 - [Dioxus Labs Projects](https://github.com/orgs/DioxusLabs/projects?query=is%3Aopen)
 - [Nical - GUIs on the GPU](https://nical.github.io/drafts/gui-gpu-notes.html)
