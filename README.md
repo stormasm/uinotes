@@ -62,6 +62,11 @@ Something else I've noticed is dioxus-desktop might be fairly limited. Animation
 
 
 - [10/18/23](https://discord.com/channels/899851952891002890/954257659597553664/1164306527314772079)
+
+---
+
+Lots of information on November 10, 2023
+
 - [11/11/23](https://discord.com/channels/899851952891002890/954257659597553664/1172872457418440704)
 
 ---
