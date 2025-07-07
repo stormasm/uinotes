@@ -77,6 +77,30 @@ As I said in the Future of Blitz issue on GH, I would be a little scared if you 
 
 ---
 
+### What is Canvas
+
+What is Canvas (in web development)?
+
+In web development, a canvas is an HTML element that acts as a container for graphics, allowing you to draw and manipulate images, shapes, and other visual content programmatically using JavaScript. Think of it as a blank drawing board where you control every pixel. It's especially useful for things like:
+Games: Fast rendering of 2D graphics.
+
+Data Visualization: Creating dynamic charts, graphs, and interactive visualizations.
+Animations: Drawing and updating graphics quickly to create smooth animations.
+Image Editing: Manipulating and processing images directly within the browser.
+
+Canvas vs. DOM Rendering
+
+The Document Object Model (DOM) is a structured representation of the content of a web page, where each element is a separate object that can be manipulated. Canvas, on the other hand, is a pixel-based approach where everything you draw becomes part of a single image.
+
+Seeking a Single API:
+
+While the DOM and Canvas serve distinct purposes and have different rendering models, you're asking about a single API to render to both DOM (nodes, not canvas) and Canvas. This is a challenging request because of their fundamental differences:
+
+DOM: Retained mode rendering, where the browser keeps track of elements and their properties, allowing for easy manipulation, accessibility, and integration with CSS.
+
+Canvas: Immediate mode rendering, where you directly control pixels, leading to high performance for graphics and animations but requiring more manual management of elements and events.
+
+
 ### Discord Search Example
 
 in: native before: 2023-03-13
