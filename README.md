@@ -1,4 +1,9 @@
 
+
+- discord: blitz native thru July 8
+
+---
+
 ### Blitz Native Discord Channel Notes
 
 - [9/9/2022](https://discord.com/channels/899851952891002890/954257659597553664/1017780518449852417)
