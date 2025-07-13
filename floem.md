@@ -9,3 +9,18 @@
 rg context::
 ```
 ---
+
+#### Interface to Winit
+
+```rust
+rg run_app
+```
+
+##### src/app.rs
+
+```rust
+pub fn run(mut self) {
+    let event_loop = self.event_loop.take().unwrap();
+    let _ = event_loop.run_app(self);
+}
+```
