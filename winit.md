@@ -9,7 +9,7 @@ event_loop.run_app
 which takes as a paramter an
 
 ```rust
-rg ApplicationHandler
+ApplicationHandler
 ```
 
 This is what gets passed to
