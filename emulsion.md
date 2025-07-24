@@ -1,4 +1,10 @@
 
+
+- Everything starts with the PictureWidget in main.rs
+- see make_picture_widget
+
+---
+
 Lets start out with how an image gets loaded into the application.   
 And look at this across all three or four different deals I am looking at.  
 
@@ -36,3 +42,8 @@ pub struct ImageCache {
 	loader: ImageLoader,
 }
 ```
+
+---
+
+- Do a search for *texture_cache* so you can better understand how data gets to the gpu
+- See CachedTexture as well as the fn upload_to_texture
