@@ -22,6 +22,18 @@ A safe OpenGL wrapper for Rust, states GitHub. It aims to detect undefined behav
 
 A high-level, minimalistic graphics API focusing on portability, supporting OpenGL, GLES 3, and WebGL1. It was open-sourced in March 2020.
 
+---
+
+* does zed gpui provide its own graphics contexts or does it depend on metal ?*
+
+Yes, GPUI (the UI framework used by Zed) relies on Metal for its graphics context on macOS.
+
+Here's why:
+
+- Initial macOS Focus: Zed and GPUI were initially developed primarily for macOS, and Metal is Apple's high-performance graphics API for that platform.
+- Direct GPU Control: To achieve the targeted high performance and responsiveness, GPUI needs low-level access and control over the GPU, which Metal provides.
+- Performance Optimization: GPUI utilizes Metal's capabilities, such as CAMetalLayer and presentsWithTransaction, to synchronize rendering with AppKit and avoid visual artifacts like frame interpolation.
+- Roadmap for Cross-Platform Support: While GPUI is designed to be cross-platform, the macOS version currently depends on Metal. However, the developers are working on expanding support to other platforms like Linux, which would likely involve using other graphics APIs like Vulkan.
 
 ---
 
@@ -81,3 +93,21 @@ Abstraction: The windowing system handles the creation and management of windows
 Relationship: While a graphics context is often associated with a particular window (or a view within it), a single graphics context can potentially be used to draw to different windows or drawing destinations (like off-screen bitmaps or printers).
 
 In essence, the window is the display area, and the graphics context is the set of drawing tools and instructions used to paint the content within that area
+
+---
+
+There is no "Rust version" of MoltenVK in the sense of a complete re-implementation of MoltenVK in Rust.
+
+MoltenVK is a C++ library that translates Vulkan API calls to Apple's Metal API.
+
+However, Rust applications can utilize MoltenVK to enable Vulkan support on macOS and iOS. This is achieved through Rust crates that provide bindings or wrappers around the MoltenVK library. Notable examples include:
+
+### ash-molten
+
+This crate builds on top of ash, a lightweight Rust wrapper for the Vulkan API. ash-molten provides a specific entry point that allows static linking with the MoltenVK library, enabling Vulkan functionality on Apple platforms within Rust applications.
+
+### vulkano
+
+This is a higher-level Rust wrapper around the Vulkan graphics API. While vulkano itself is not a MoltenVK re-implementation, it leverages MoltenVK (typically by requiring the Vulkan SDK, which includes MoltenVK) to provide Vulkan support on macOS and iOS.
+
+Therefore, while MoltenVK itself remains a C++ project, Rust developers can integrate it into their applications using these crates to leverage Vulkan on Apple's platforms.
