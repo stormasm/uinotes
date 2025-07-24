@@ -111,3 +111,8 @@ This crate builds on top of ash, a lightweight Rust wrapper for the Vulkan API. 
 This is a higher-level Rust wrapper around the Vulkan graphics API. While vulkano itself is not a MoltenVK re-implementation, it leverages MoltenVK (typically by requiring the Vulkan SDK, which includes MoltenVK) to provide Vulkan support on macOS and iOS.
 
 Therefore, while MoltenVK itself remains a C++ project, Rust developers can integrate it into their applications using these crates to leverage Vulkan on Apple's platforms.
+
+###
+
+- [glium](https://github.com/glium/glium)
+- [glium post mortem](https://users.rust-lang.org/t/glium-post-mortem/7063)
