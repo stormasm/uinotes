@@ -1,3 +1,29 @@
+*what are the most popular rust open source graphics contexts ?*
+
+In the Rust graphics ecosystem, a few open-source libraries stand out as popular choices for different use cases:
+
+### WGPU
+
+This is a cross-platform graphics library built on the WebGPU API, according to wgpu.rs. It runs natively on Vulkan, Metal, DirectX 12, and OpenGL ES, and on WebAssembly via WebGPU and WebGL2. It is also the core of WebGPU integration in Firefox, Servo, and Deno. It aims to give developers more control and better align with modern hardware capabilities, notes zdgeier.com.
+
+### Vulkano
+
+A high-level library that wraps the Vulkan API, simplifying common tasks. It was open-sourced in March 2016.
+
+### gfx-rs
+
+This is a low-level, cross-platform graphics abstraction library. It features a hardware abstraction layer (gfx-hal) that translates to native graphics backends like Vulkan, DirectX 12, Metal, and OpenGL. It provides a safe interface over OpenGL, according to The Rust Programming Language Forum.
+
+### Glium
+
+A safe OpenGL wrapper for Rust, states GitHub. It aims to detect undefined behavior and manage state. While it gained popularity for providing a safe interface over OpenGL, it is no longer actively developed by its original author, though the community continues to maintain it, says GitHub.
+
+### Miniquad
+
+A high-level, minimalistic graphics API focusing on portability, supporting OpenGL, GLES 3, and WebGL1. It was open-sourced in March 2020.
+
+
+---
 
 *in computer graphics what is a graphics context versus the window ?*
 
