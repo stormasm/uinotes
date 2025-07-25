@@ -116,3 +116,9 @@ Therefore, while MoltenVK itself remains a C++ project, Rust developers can inte
 
 - [glium](https://github.com/glium/glium)
 - [glium post mortem](https://users.rust-lang.org/t/glium-post-mortem/7063)
+
+---
+
+Winit doesn’t directly provide any methods for drawing on a Window. However, it allows you to retrieve the raw handle of the window and display (see the platform module and/or the raw_window_handle and raw_display_handle methods), which in turn allows you to create an OpenGL/Vulkan/DirectX/Metal/etc. context that can be used to render graphics.
+
+---
