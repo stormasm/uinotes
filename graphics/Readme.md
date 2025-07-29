@@ -1,7 +1,10 @@
 
 ---
 
-- [raw window handle](https://docs.rs/raw-window-handle)
+### winit uses the raw window handle crate
+
+- [raw window handle](https://github.com/rust-windowing/raw-window-handle)
+- [raw window handle api](https://docs.rs/raw-window-handle)
 - [zed discord gpui](https://discord.com/channels/869392257814519848/1199799855007158352/1399510465507360819)
 
 ---
