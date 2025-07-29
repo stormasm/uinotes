@@ -1,4 +1,10 @@
 
+---
+
+- [raw window handle](https://docs.rs/raw-window-handle)
+- [zed discord gpui](https://discord.com/channels/869392257814519848/1199799855007158352/1399510465507360819)
+
+---
 
 - [Video 0 Start of the Series](https://www.youtube.com/watch?v=zizinGhwrPM)
 - [Event Loop](https://www.youtube.com/watch?v=P0VcE9D-3Ow)
