@@ -18,10 +18,10 @@ When building applications with windowing in Rust, you'll typically begin by cre
 
 AI responses may include mistakes.
 
-[1] https://www.reddit.com/r/gameenginedevs/comments/1lrhhw3/rust_game_engine_dev_log_7_implementing_the/[2] https://docs.rs/winit/latest/winit/
-[3] https://medium.com/@aleksej.gudkov/rust-winit-example-creating-a-windowed-application-0eaaf395d776
-[4] https://github.com/rust-windowing
-[5] https://github.com/rust-windowing/softbuffer
-[6] https://github.com/rust-windowing/raw-window-handle
-[7] https://users.rust-lang.org/t/use-llvm-instead-of-msvc/47474
-[8] https://www.reddit.com/r/rust/comments/1dzg8vm/anyone_building_native_gui_apps_for_windows_using/[9] https://kennykerr.ca/rust-getting-started/windows-or-windows-sys.html
+- https://medium.com/@aleksej.gudkov/rust-winit-example-creating-a-windowed-application-0eaaf395d776
+- https://github.com/rust-windowing
+- https://github.com/rust-windowing/softbuffer
+- https://github.com/rust-windowing/raw-window-handle
+- https://users.rust-lang.org/t/use-llvm-instead-of-msvc/47474
+- https://www.reddit.com/r/rust/comments/1dzg8vm/anyone_building_native_gui_apps_for_windows_using/-  
+- https://kennykerr.ca/rust-getting-started/windows-or-windows-sys.html
