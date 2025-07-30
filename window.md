@@ -25,3 +25,8 @@ AI responses may include mistakes.
 - https://users.rust-lang.org/t/use-llvm-instead-of-msvc/47474
 - https://www.reddit.com/r/rust/comments/1dzg8vm/anyone_building_native_gui_apps_for_windows_using/-  
 - https://kennykerr.ca/rust-getting-started/windows-or-windows-sys.html
+
+### Notes on this subject
+
+- Combine with Graphics Libraries:
+- Pair Winit with rendering libraries like wgpu, glium, or ash for advanced graphics.

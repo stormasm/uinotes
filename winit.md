@@ -1,4 +1,16 @@
 
+- https://medium.com/@aleksej.gudkov/rust-winit-example-creating-a-windowed-application-0eaaf395d776
+
+### What is winit
+
+Winit is a popular Rust library for handling window creation and input events. It serves as the foundation for many graphics and game development frameworks, making it an essential tool for creating cross-platform applications. In this article, we’ll explore how to use Winit to create a basic window and handle events like user input.
+
+- Winit is a cross-platform Rust library designed for:
+- Window Creation: Create native application windows on desktop and mobile platforms.
+- Input Handling: Capture keyboard, mouse, and other input events.
+- Event Management: Manage and respond to application lifecycle events.
+
+--- 
 
 So blitz, floem, and viewskater all get kicked off by
 
