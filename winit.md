@@ -1,6 +1,6 @@
 
 - elwt stands for event loop window target
-- Rename EventLoopWindowTarget to ActiveEventLoop.
+- Rename EventLoopWindowTarget to ActiveEventLoop from version 29 to version 30
 - [see details here](https://rust-windowing.github.io/winit/winit/changelog/v0_30/index.html)
 
 ---
