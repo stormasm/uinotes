@@ -1,4 +1,10 @@
 
+### Winit AI Questions
+
+- [in rust winit what is the ActiveEventLoop](https://www.google.com/search?sourceid=chrome&udm=50&aep=42&q=in+rust+winit+what+is+the+ActiveEventLoop)
+
+---
+
 - elwt stands for event loop window target
 - Rename EventLoopWindowTarget to ActiveEventLoop from version 29 to version 30
 - [see details here](https://rust-windowing.github.io/winit/winit/changelog/v0_30/index.html)
