@@ -1,4 +1,10 @@
 
+- elwt stands for event loop window target
+- Rename EventLoopWindowTarget to ActiveEventLoop.
+- [see details here](https://rust-windowing.github.io/winit/winit/changelog/v0_30/index.html)
+
+---
+
 - https://medium.com/@aleksej.gudkov/rust-winit-example-creating-a-windowed-application-0eaaf395d776
 
 ### What is winit
@@ -10,7 +16,7 @@ Winit is a popular Rust library for handling window creation and input events. I
 - Input Handling: Capture keyboard, mouse, and other input events.
 - Event Management: Manage and respond to application lifecycle events.
 
---- 
+---
 
 So blitz, floem, and viewskater all get kicked off by
 
