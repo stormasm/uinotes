@@ -1,4 +1,8 @@
 
+#### Winit Basic Setup
+
+- [Simple Setup Code](https://github.com/rust-windowing/winit/blob/master/winit/src/changelog/v0.30.md#removed)
+
 ### Winit AI Questions
 
 - [in rust winit what is the ActiveEventLoop](https://www.google.com/search?sourceid=chrome&udm=50&aep=42&q=in+rust+winit+what+is+the+ActiveEventLoop)
