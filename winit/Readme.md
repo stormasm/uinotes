@@ -1,4 +1,11 @@
 
+#### Four key crates in winit for mac in order of compilation
+
+- winit-core
+- winit-common
+- winit-appkit
+- winit
+
 #### Winit Basic Setup
 
 - [Simple Setup Code](https://github.com/rust-windowing/winit/blob/master/winit/src/changelog/v0.30.md#removed)
