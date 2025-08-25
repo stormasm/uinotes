@@ -1,4 +1,20 @@
 
+### Google
+
+Vulkan and WGPU represent different levels of abstraction in graphics programming:
+
+Vulkan is a low-level, explicit graphics and compute API developed by the Khronos Group. It provides direct control over the GPU, enabling highly optimized performance.
+
+WGPU:
+
+WGPU is a cross-platform graphics API written in Rust, which serves as an abstraction layer on top of native APIs like Vulkan, Metal, D3D12, and OpenGL. It is based on the WebGPU standard.
+
+---
+
+### Reference
+
+- [vulkan versus wgpu](https://www.google.com/search?q=vulkan+versus+wgpu&rlz=1C5OZZY_enUS1141US1141&oq=vulkan+versus+wgpu&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYgAQYogQyCggHEAAYgAQYogQyBwgIEAAY7wXSAQg2OTU4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+
 ---
 
 ### winit uses the raw window handle crate
