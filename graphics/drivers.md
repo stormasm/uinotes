@@ -23,13 +23,15 @@ No, Metal is not a GPU driver; rather, it is a low-level graphics and compute Ap
 
 Here's a breakdown:
 
-Metal API:   
+1. Metal API:   
 Think of Metal as the common language and set of rules that software uses to talk to the GPU. It provides low-level access to the GPU's capabilities, allowing for greater performance and control over graphics rendering and computations.
 
-GPU Driver:   
+2. GPU Driver:   
 The driver is the specific software that "understands" Metal's instructions and tells the hardware (like an Apple Silicon GPU or an older Intel/AMD GPU) how to perform those tasks.
 
-The System:   
+3. The System:   
 On a Mac, the Metal API works in conjunction with the GPU driver. Applications that use Metal leverage the API to send commands, and the Metal driver then handles the low-level communication with the actual hardware.
 
 In summary, Metal is the interface for the GPU, and the driver is the bridge that connects the interface to the hardware
+
+---
