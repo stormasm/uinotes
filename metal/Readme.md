@@ -1,5 +1,9 @@
 
+- [AppKit Toplevel Doc](https://developer.apple.com/documentation/appkit)
 - [NSApplication](https://developer.apple.com/documentation/appkit/nsapplication)
+- [msg_send! appkit](https://www.google.com/search?q=msg_send!+appkit&rlz=1C5OZZY_enUS1141US1141&oq=msg_send!+appkit&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRiPAjIHCAUQIRiPAtIBCDUzODRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
+
+---
 
 #### NSApp cocoa
 
@@ -26,7 +30,7 @@ Accessibility:
 
 Developers use NSApp to perform operations such as getting or setting the key window, creating and configuring menus, and controlling the application's overall execution flow
 
-
+---
 
 #### mac cocoa how does the NSWindow get tied to the NSApp
 
@@ -56,14 +60,7 @@ When an application launches, NSApplication is responsible for loading the main 
 
 In essence, NSApp acts as the central coordinator and dispatcher for all NSWindow instances within a Cocoa application, facilitating their interaction with the user, the operating system, and other application components.
 
-
-
-
-
-
-
-
-
+---
 
 ### Filenames ending in WGSL
 
@@ -83,6 +80,8 @@ The .wgsl file extension is standardized by IANA for text-based WGSL content, an
 
  While Blade supports WGSL as its primary language, it also allows for the use of other formats like GLSL or SPIR-V during the transition period, though WGSL is the recommended and future-focused approach.
 
+---
+
 ### Filename shaders.metal
 
 The filename shaders.metal is used for a Metal Shading Language (MSL) source code file, which is the standard format for writing shaders in Apple's Metal framework.
@@ -96,6 +95,8 @@ The filename shaders.metal is used for a Metal Shading Language (MSL) source cod
  The file can be compiled into an intermediate representation (.ir) using the xcrun -sdk macosx metal -c shaders.metal -o shaders.ir command, which can then be disassembled into a human-readable LLVM assembly format using llvm-dis.
 
  This compiled code is later packaged into a .metallib file, which is included in the application bundle and contains the compiled shader code and metadata.
+
+---
 
 ### References
 
