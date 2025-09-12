@@ -1,4 +1,33 @@
 
+- [NSApplication](https://developer.apple.com/documentation/appkit/nsapplication)
+
+#### NSApp cocoa
+
+In the macOS and iOS Cocoa development environments, NSApp is a global pointer to the single, shared instance of the NSApplication class, which manages an application's main event loop and resources. It provides a convenient way for any part of an application to access the central application object and its functionalities, such as handling user events, managing windows, and interacting with the operating system.
+
+Key Aspects of NSApp:
+
+Global Access:
+
+NSApp acts as a convenient handle to the application's main object, allowing easy access from anywhere within the application's code.
+
+NSApplication Instance:
+It always points to an instance of NSApplication, which is the core object for controlling the application's lifecycle and behavior.
+
+Main Event Loop:
+
+NSApp is involved in running the application's main event loop, which handles events like user input, window updates, and other system messages.
+
+Central Management:
+
+It serves as the manager for all application-level resources and provides the interface for interacting with the operating system.
+
+Accessibility:
+
+Developers use NSApp to perform operations such as getting or setting the key window, creating and configuring menus, and controlling the application's overall execution flow
+
+
+
 #### mac cocoa how does the NSWindow get tied to the NSApp
 
 In macOS Cocoa applications, the NSWindow objects are managed and coordinated by the shared NSApplication instance. This relationship is not a direct "ownership" in the traditional sense, but rather a central management role for NSApp.
@@ -53,8 +82,6 @@ In the context of Blade, WGSL files are used to define the logic for vertex and 
 The .wgsl file extension is standardized by IANA for text-based WGSL content, and these files are typically imported and compiled into shader modules within the application code.
 
  While Blade supports WGSL as its primary language, it also allows for the use of other formats like GLSL or SPIR-V during the transition period, though WGSL is the recommended and future-focused approach.
-
-
 
 ### Filename shaders.metal
 
