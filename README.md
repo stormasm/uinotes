@@ -4,6 +4,8 @@
 - egui uses objc2
 - helix uses a tui so is not relevant
 - iced uses winit partially
+- lapce uses Floem which uses objc2 in concert with NSApplication
+- servo uses winit partially ?
 
 ---
 
