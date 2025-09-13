@@ -1,4 +1,11 @@
 
+### Windowing and Graphics Dependencies
+
+- egui uses objc2
+- helix uses a tui so is not relevant
+- iced uses winit partially
+
+---
 
 - discord: blitz native thru July 8
 
